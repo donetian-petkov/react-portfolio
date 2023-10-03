@@ -1,14 +1,27 @@
 import {ProjectCard} from "./ProjectCard/ProjectCard.js";
 import styles from './Projects.module.css'
+import {useEffect, useState} from "react";
 export const Projects = () => {
 
-    const projectsArray = [1];
+    const [projects, setProjects] = useState([]);
+
+    useEffect( () => {
+
+        try {
+            fetch('https://portfolio-react.donetianpetkov.com/projects.json')
+                .then(res => res.json())
+                .then(res => setProjects(res));
+        } catch(err) {
+            console.log(err);
+        }
+
+    },[projects])
 
     return (
         <section id="projects" className={styles.projects}>
 
             {
-                projectsArray.map(x => <ProjectCard project={x}/>)
+                projects.map(project => <ProjectCard key={project.id} project={project}/>)
             }
 
         </section>
