@@ -1,0 +1,23 @@
+.projects {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (max-width: 632px) {
+
+    .projects {
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 412px) {
+
+    .projects {
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,19 +1,22 @@
-export const ProjectCard = () => {
+import styles from './ProjectCard.module.css';
+
+export const ProjectCard = ({
+    project
+                            }) => {
 
     return (
-
-        <article id="movie-hunter" className="projects__card">
-            <div className="projects__card__img">
+        <article id="movie-hunter" className={styles.projects__card}>
+            <div className={styles.projects__card__img}>
                 <a target="_blank" href="https://movie-hunter.donetianpetkov.com/">
-                    <img className="projects__card__img__front" id="movie-hunter-img"
+                    <img className={styles.projects__card__img__front} id="movie-hunter-img"
                          src="https://www.donetianpetkov.com/wp-content/uploads/2023/09/movie-hunter.png"
                          alt="movie-hunter-img"/>
-                    <img className="projects__card__img__back" id="movie-hunter-img-2"
+                    <img className={styles.projects__card__img__back} id="movie-hunter-img-2"
                          src="https://www.donetianpetkov.com/wp-content/uploads/2023/09/movie-hunter2.png"
                          alt="movie-hunter-img"/>
                 </a>
             </div>
-            <div className="projects__card__text">
+            <div className={styles.projects__card__text}>
                 <a target="_blank" href="https://movie-hunter.donetianpetkov.com/"><h2>Movie Hunter</h2></a>
                 <p>The website built on React is a cool spot for movie fans! It shows all the latest movies that are
                     out,
@@ -29,7 +32,6 @@ export const ProjectCard = () => {
                 </p>
             </div>
         </article>
-
     )
 
 }

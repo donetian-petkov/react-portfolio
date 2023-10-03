@@ -1,0 +1,70 @@
+.hero {
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__text {
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    transform: translate(-30%, -70%);
+    box-shadow: 3px 3px 10px 3px var(--background-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero__text:hover {
+    transform: scale(1.05) translate(-30%, -70%);
+    box-shadow: 5px 5px 5px 5px var(--background-color);
+}
+
+.hero__text h1, p {
+    margin: 0;
+    font-size: 2em;
+}
+
+.hero__text h1 {
+    color: var(--accent-color);
+    text-shadow: 2px 2px 2px var(--background-color);
+}
+
+.hero__text p {
+    color: var(--text-color);
+    text-shadow: 2px 2px 2px var(--background-color);
+}
+
+.hero__text p:nth-child(2) {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 2.3em;
+}
+
+
+.hero__text p:nth-child(3) {
+    font-family: "Press Start 2P", sans-serif;
+    word-spacing: -14px;
+    font-size: 1.5em;
+}
+
+.hero__text p:nth-child(4) {
+    font-family: "Monoton", sans-serif;
+    word-spacing: 10px;
+    font-size: 1.7em;
+}
+
+.hero img {
+    box-shadow: 5px 5px 15px var(--accent-color);
+}
+
+@media (max-width: 632px) {
+    .hero__text {
+        transform: none;
+        object-fit: cover;
+    }
+
+    .hero__text:hover {
+        transform: scale(1.05);
+    }
+
+}

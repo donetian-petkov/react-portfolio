@@ -1,0 +1,20 @@
+.about {
+    margin-bottom: 10px;
+    background: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text {
+    padding: 100px;
+    font-family: Caveat, sans-serif;
+    color: var(--text-color-secondary);
+    text-align: center;
+    font-size: 15px;
+}
+
+.about img {
+    box-shadow: -5px 5px 15px var(--background-color);
+    padding-right: 10px;
+}
