@@ -5,6 +5,7 @@ import {About} from "./components/About/About.js";
 import {Projects} from "./components/Projects/Projects.js";
 import {Footer} from "./components/Footer/Footer.js";
 import {Main} from "./components/Main/Main";
+import {ContactForm} from "./components/ContactForm/ContactForm";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
             <Route path="/" element={<Main />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<></>} />
+            <Route path="/contact" element={<ContactForm/>} />
         </Routes>
         <Footer/>
     </div>
