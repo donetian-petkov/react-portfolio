@@ -6,10 +6,12 @@ import {Projects} from "./components/Projects/Projects.js";
 import {Footer} from "./components/Footer/Footer.js";
 import {Main} from "./components/Main/Main";
 import {ContactForm} from "./components/ContactForm/ContactForm";
+import {Toaster} from "react-hot-toast";
 
 function App() {
   return (
     <div className="App">
+        <div><Toaster/></div>
         <NavBar/>
         <Routes>
             <Route path="/" element={<Main />} />

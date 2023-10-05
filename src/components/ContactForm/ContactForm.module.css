@@ -8,8 +8,12 @@
     border-bottom: 10px solid var(--accent-color);
 }
 
-.contactForm__input {
+.contactForm * {
+    margin: 5px;
 
+}
+
+.contactForm__input {
     width: 300px;
     height: 20px;
 }
@@ -17,4 +21,23 @@
 .contactForm__textArea {
     width: 300px;
     height: 80px;
+}
+
+.contactForm__btn {
+    background: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 2px 2px 10px 2px var(--background-color);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;;
+}
+
+.contactForm__btn:hover {
+    background: var(--background-color);
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.contactForm__btn:active {
+    background: var(--accent-color);
+    color: var(--background-color);
+    transform: scale(0.8);
 }

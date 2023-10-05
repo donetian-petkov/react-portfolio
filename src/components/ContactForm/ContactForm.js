@@ -1,6 +1,7 @@
 import {sendEmail} from "../../utils/contactFormService";
 import styles from "./ContactForm.module.css"
 import {useState} from "react";
+import {toast, Toaster} from "react-hot-toast";
 
 export const ContactForm = () => {
 
@@ -29,7 +30,11 @@ export const ContactForm = () => {
 
             const result = await response.json();
 
-            console.log(result.message);
+            if (result.status === "success") {
+                toast.success(result.message);
+            } else if (result.status === "failure") {
+                toast.error(result.message);
+            }
 
         } catch (error) {
             console.log(error);
