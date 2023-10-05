@@ -24,10 +24,14 @@ export const ContactForm = () => {
 
         try {
 
-            await sendEmail(email).then(e => console.log(e));
+            const response = await sendEmail(email);
+
+            const result = await response.json();
+
+            console.log(result.message);
 
         } catch (error) {
-            console.log(error)
+            console.log(error);
         }
 
     };

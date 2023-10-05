@@ -10,6 +10,6 @@ export const sendEmail = async (email) => {
         body: JSON.stringify(email)
     });
 
-    return response.json();
+    return response;
 
 }
