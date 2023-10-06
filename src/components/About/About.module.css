@@ -1,20 +1,28 @@
 .about {
-    margin-bottom: 10px;
-    background: var(--accent-color);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .about__text {
+    max-width: 100%;
+    margin: 5%;
     padding: 100px;
     font-family: Caveat, sans-serif;
     color: var(--text-color-secondary);
     text-align: center;
     font-size: 15px;
+    background: var(--accent-color);
+
 }
 
 .about img {
+    max-width: 100%;
+    height: auto;
     box-shadow: -5px 5px 15px var(--background-color);
     padding-right: 10px;
 }

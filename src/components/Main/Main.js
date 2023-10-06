@@ -1,8 +1,8 @@
-import {Hero} from "../Hero/Hero.js";
-import {About} from "../About/About";
-import {Projects} from "../Projects/Projects";
+import Hero from "../Hero/Hero.js";
+import About from "../About/About";
+import Projects from "../Projects/Projects";
 
-export const Main = () => {
+const Main = () => {
 
     return (
         <main className="main-body">
@@ -13,3 +13,5 @@ export const Main = () => {
 
         )
 }
+
+export default Main;

@@ -3,7 +3,7 @@ import styles from "./ContactForm.module.css"
 import {useState} from "react";
 import {toast, Toaster} from "react-hot-toast";
 
-export const ContactForm = () => {
+const ContactForm = () => {
 
     const [email, setEmail] = useState({
         name: '',
@@ -60,3 +60,5 @@ export const ContactForm = () => {
 
 
 }
+
+export default ContactForm;

@@ -1,6 +1,6 @@
 import styles from './Hero.module.css'
 
-export const Hero = () => {
+const Hero = () => {
 
 
     return (
@@ -17,3 +17,5 @@ export const Hero = () => {
 )
 
 }
+
+export default Hero;

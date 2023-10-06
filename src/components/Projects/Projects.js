@@ -1,7 +1,7 @@
 import {ProjectCard} from "./ProjectCard/ProjectCard.js";
 import styles from './Projects.module.css'
 import {useEffect, useState} from "react";
-export const Projects = () => {
+const Projects = () => {
 
     const [projects, setProjects] = useState([]);
 
@@ -15,10 +15,12 @@ export const Projects = () => {
             console.log(err);
         }
 
-    },[projects])
+    },[])
 
     return (
         <section id="projects" className={styles.projects}>
+
+            <h1 className={styles.projects__title}>Projects</h1>
 
             {
                 projects.map(project => <ProjectCard key={project.id} project={project}/>)
@@ -28,3 +30,5 @@ export const Projects = () => {
     )
 
 }
+
+export default Projects;

@@ -1,8 +1,9 @@
 .topMenu {
+    max-width: 1500px;
+    margin: 0 auto;
     background: var(--accent-color);
     list-style-type: none;
     overflow: hidden;
-    margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 2;
