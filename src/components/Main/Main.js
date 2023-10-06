@@ -1,6 +1,7 @@
 import Hero from "../Hero/Hero.js";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import ContactForm from "../ContactForm/ContactForm";
 
 const Main = () => {
 
@@ -9,6 +10,7 @@ const Main = () => {
             <Hero/>
             <About/>
             <Projects/>
+            <ContactForm/>
         </main>
 
         )

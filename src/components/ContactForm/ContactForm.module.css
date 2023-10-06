@@ -7,21 +7,22 @@
     justify-content: center;
     flex-direction: column;
     background: var(--background-color);
+    color: var(--accent-color);
 }
 
 .contactForm * {
-    margin: 5px;
+    margin: 0.5%;
 
 }
 
 .contactForm__input {
-    width: 300px;
-    height: 20px;
+    width: 20%;
+    height: 10%;
 }
 
 .contactForm__textArea {
-    width: 300px;
-    height: 80px;
+    width: 20%;
+    height: 20vh;
 }
 
 .contactForm__btn {

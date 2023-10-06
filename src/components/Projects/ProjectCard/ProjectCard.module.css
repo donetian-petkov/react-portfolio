@@ -5,11 +5,14 @@
     justify-content: center;
     width: 100%;
     margin: 0 auto;
+
 }
 
 .projects__card__descr {
+    font-size: 1.8em;
     width: 50%;
     margin-bottom: 1%;
+    padding: 0.5%;
     color: var(--accent-color);
     border-bottom: solid 2px var(--accent-color);
 }
