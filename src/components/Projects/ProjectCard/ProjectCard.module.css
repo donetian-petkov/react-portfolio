@@ -8,7 +8,7 @@
 
 .projects__card__descr {
     font-size: 1.5em;
-    width: 50%;
+    width: 60%;
     margin-bottom: 1%;
     padding: 0.5%;
     color: var(--accent-color);
@@ -21,7 +21,7 @@
 }
 
 .projects__card__link h2 {
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: var(--accent-color);
 }
 

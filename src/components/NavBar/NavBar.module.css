@@ -22,6 +22,11 @@
     margin: 10px;
 }
 
+.topMenu__list__menu:hover {
+    text-decoration: underline;
+    text-underline-color: var(--text-color);
+}
+
 .topMenu__list__menu__link:visited {
     color: var(--text-color-secondary);
 }
