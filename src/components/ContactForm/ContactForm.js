@@ -1,7 +1,7 @@
 import {sendEmail} from "../../utils/contactFormService";
 import styles from "./ContactForm.module.css"
 import {useState} from "react";
-import {toast, Toaster} from "react-hot-toast";
+import {toast} from "react-hot-toast";
 
 const ContactForm = () => {
 
@@ -23,6 +23,11 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
 
         e.preventDefault();
+
+        if (email.name === '' || email.email === '' || email.message === '') {
+            toast.error("Please fill in all fields");
+            return;
+        }
 
         try {
 
