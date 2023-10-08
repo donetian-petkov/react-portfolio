@@ -5,6 +5,7 @@ import {Footer} from "./components/Footer/Footer.js";
 import {Toaster} from "react-hot-toast";
 import React, {Suspense} from "react";
 import {Loading} from "./components/Loading/Loading";
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
                 <Route path="/contact" element={<ContactForm/>} />
             </Routes>
         </Suspense>
+        <BackToTopButton/>
         <Footer/>
     </div>
   );
