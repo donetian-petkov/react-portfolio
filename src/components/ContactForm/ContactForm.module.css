@@ -1,33 +1,44 @@
 .contactForm {
-    margin: 0;
+    margin: 10px auto;
+    max-width: 700px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: var(--background-color);
-    border-bottom: 10px solid var(--accent-color);
+    background: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
 
 .contactForm * {
-    margin: 5px;
+    font-size: 1.5em;
+    margin: 0.8%;
 
+}
+
+.contactForm h2 {
+    font-size: 2em;
+    text-decoration: underline;
 }
 
 .contactForm__input {
-    width: 300px;
-    height: 20px;
+    width: 40%;
+    height: 10%;
 }
 
 .contactForm__textArea {
-    width: 300px;
-    height: 80px;
+    width: 40%;
+    max-height: 200px;
+    height: 20vh;
 }
 
 .contactForm__btn {
-    background: var(--accent-color);
-    color: var(--background-color);
-    box-shadow: 2px 2px 10px 2px var(--background-color);
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;;
+    background: var(--background-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .contactForm__btn:hover {
@@ -37,7 +48,7 @@
 }
 
 .contactForm__btn:active {
-    background: var(--accent-color);
-    color: var(--background-color);
+    background: var(--background-color);
+    color: var(--accent-color);
     transform: scale(0.8);
 }

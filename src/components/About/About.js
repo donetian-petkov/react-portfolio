@@ -1,6 +1,6 @@
 import styles from './About.module.css'
 
-export const About = () => {
+const About = () => {
 
     return (
         <section id="about" className={styles.about}>
@@ -28,3 +28,5 @@ export const About = () => {
     )
 
 }
+
+export default About;

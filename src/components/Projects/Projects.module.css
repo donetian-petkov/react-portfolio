@@ -1,7 +1,17 @@
 .projects {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+
+.projects__title {
+    font-size: 2.7em;
+    margin-bottom: 1.5%;
+    color: var(--accent-color);
 }
 
 @media (max-width: 632px) {

@@ -1,8 +1,9 @@
 .topMenu {
+    max-width: 100%;
+    margin: 0 auto;
     background: var(--accent-color);
     list-style-type: none;
     overflow: hidden;
-    margin-bottom: 10px;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -13,17 +14,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.4em;
     list-style: none;
 }
 
 .topMenu__list__menu {
+    color: var(--background-color);
     margin: 10px;
 }
 
+.topMenu__list__menu:hover {
+    text-decoration: underline;
+}
+
 .topMenu__list__menu__link:visited {
-    color: var(--text-color-secondary);
+    color: var(--background-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 400px) {
+    .topMenu {
+        font-size: 0.8em;
+    }
 }
 
 

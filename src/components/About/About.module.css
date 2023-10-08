@@ -1,20 +1,36 @@
 .about {
-    margin-bottom: 10px;
-    background: var(--accent-color);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
 
 .about__text {
-    padding: 100px;
+    max-width: 100%;
+    margin: 5%;
+    padding: 5%;
     font-family: Caveat, sans-serif;
     color: var(--text-color-secondary);
     text-align: center;
     font-size: 15px;
+    background: var(--accent-color);
+    box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
 
 .about img {
-    box-shadow: -5px 5px 15px var(--background-color);
+    max-width: 100%;
+    height: auto;
+    box-shadow: -14px 17px 4px -3px rgba(0,0,0,0.52);
     padding-right: 10px;
+
+}
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+    }
 }

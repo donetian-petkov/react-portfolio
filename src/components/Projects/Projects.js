@@ -1,7 +1,8 @@
 import {ProjectCard} from "./ProjectCard/ProjectCard.js";
 import styles from './Projects.module.css'
 import {useEffect, useState} from "react";
-export const Projects = () => {
+import Slider from "../Slider/Slider";
+const Projects = () => {
 
     const [projects, setProjects] = useState([]);
 
@@ -15,16 +16,22 @@ export const Projects = () => {
             console.log(err);
         }
 
-    },[projects])
+    },[]);
+
+    const slides = projects.map((project) => {
+        return <ProjectCard project={project} key={project.id}/>
+    });
 
     return (
         <section id="projects" className={styles.projects}>
 
-            {
-                projects.map(project => <ProjectCard key={project.id} project={project}/>)
-            }
+            <h1 className={styles.projects__title}>Projects</h1>
+
+            <Slider components={slides}/>
 
         </section>
     )
 
 }
+
+export default Projects;
