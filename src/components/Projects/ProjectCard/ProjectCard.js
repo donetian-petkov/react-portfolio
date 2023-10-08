@@ -9,9 +9,10 @@ export const ProjectCard = ({
             <img className={styles.projects__card__img} id={`${project.id}_img`}
                  src={project.img}
                  alt={`${project.id}_alt`}/>
-            <a target="_blank" className={styles.projects__card__link} href={project.link}><h2>{project.title}</h2></a>
+            <a aria-label="link-to-project" target="_blank" className={styles.projects__card__link} href={project.link}><h2>{project.title}</h2></a>
             <p className={styles.projects__card__descr}>{project.descr}</p>
         </article>
     )
 
 }
+

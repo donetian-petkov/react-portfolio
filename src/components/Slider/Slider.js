@@ -16,9 +16,9 @@ function Slider({ components }) {
 
     return (
         <div className={styles.slider}>
-            <button className={styles.slider__button} onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} size="2xl" /></button>
+            <button aria-label="slider-button-left" className={styles.slider__button} onClick={prevSlide}><FontAwesomeIcon icon={faArrowLeft} size="2xl" /></button>
             {components[currentIndex]}
-            <button className={styles.slider__button} onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} size="2xl" /></button>
+            <button aria-label="slider-button-right" className={styles.slider__button} onClick={nextSlide}><FontAwesomeIcon icon={faArrowRight} size="2xl" /></button>
         </div>
     );
 }

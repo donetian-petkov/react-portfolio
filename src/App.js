@@ -14,8 +14,6 @@ function App() {
     const Projects = React.lazy(() => import('./components/Projects/Projects.js'));
     const ContactForm = React.lazy(() => import('./components/ContactForm/ContactForm.js'));
 
-
-
     return (
     <div className="App">
         <div><Toaster/></div>

@@ -32,7 +32,7 @@ function BackToTopButton() {
     return (
         <div className={styles.scrollToTop}>
             {isVisible &&
-                <button onClick={scrollToTop}>
+                <button aria-label="back-to-top-button" onClick={scrollToTop}>
                     <FontAwesomeIcon icon={faArrowUp} size="2xl" />
                 </button>}
         </div>
