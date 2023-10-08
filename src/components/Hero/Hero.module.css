@@ -59,7 +59,7 @@
 .hero img {
     max-width: 100%;
     height: auto;
-    box-shadow: 5px 5px 15px var(--accent-color);
+    box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
 
 @media (max-width: 632px) {
