@@ -32,4 +32,10 @@
     text-decoration: underline;
 }
 
+@media (max-width: 400px) {
+    .topMenu {
+        font-size: 0.8em;
+    }
+}
+
 

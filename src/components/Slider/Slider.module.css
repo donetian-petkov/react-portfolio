@@ -30,6 +30,21 @@
     transform: scale(0.8);
 }
 
+@media (max-width: 1200px) {
+    .slider__button {
+        font-size: 0.8em;
+        padding: 1%;
+        width: 10%;
+        max-width: 10%;
+        height: 100%;
+        cursor:pointer;
+        background: var(--accent-color);
+        color: var(--background-color);
+        border: none;
+        transition: background ease-in-out, color ease-in-out;
+    }
+}
+
 
 
 

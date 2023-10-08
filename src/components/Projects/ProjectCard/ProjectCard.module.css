@@ -27,4 +27,17 @@
 
 }
 
+@media (max-width: 1200px) {
+    .projects__card__descr {
+        max-width: 100%;
+        width: 80%;
+    }
+
+    .projects__card__img {
+        max-width: 100%;
+        width: 90%;
+        box-shadow: none;
+    }
+}
+
 

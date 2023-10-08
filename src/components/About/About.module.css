@@ -28,3 +28,9 @@
     padding-right: 10px;
 
 }
+
+@media (max-width: 1200px) {
+    .about {
+        flex-direction: column;
+    }
+}
