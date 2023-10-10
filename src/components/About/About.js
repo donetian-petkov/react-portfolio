@@ -1,9 +1,10 @@
 import styles from './About.module.css'
+import {withStatusOfLoading} from "../../hocs/withStatusOfLoading";
 
-const About = () => {
+const About = (props) => {
 
     return (
-        <section id="about" className={styles.about}>
+        <section id="about" className={`${styles.about} ${props.isLoaded ? "scaleLoading" : ""}`}>
             <article className={styles.about__text}>
                 <p>Hello! I'm a passionate cinephile with a deep love for the art of filmmaking, always eager to dive
                     into
@@ -29,4 +30,4 @@ const About = () => {
 
 }
 
-export default About;
+export default withStatusOfLoading(About);

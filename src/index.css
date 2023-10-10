@@ -47,6 +47,32 @@ a {
   text-decoration: none;
 }
 
+@keyframes fadeInEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleEffect {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.0;
+  }
+}
+
+.scaleLoading{
+    animation: scaleEffect 5s ease-in-out;
+}
+
+.fadeIn {
+  animation: fadeInEffect 5s ease-in-out;
+}
+
 @media (max-width: 1200px) {
   body {
     display: flex;
