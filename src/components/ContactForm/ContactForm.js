@@ -49,7 +49,7 @@ const ContactForm = () => {
 
     return (
             <form id='contact-form' className={styles.contactForm} onSubmit={handleSubmit}>
-                <h2>Contact Form: </h2>
+                <h2>Contact Form</h2>
                 <label htmlFor="form-name">Name: </label>
                 <input type="text" id="form-name" name="name" onChange={handleChange} value={email.name}
                        className={styles.contactForm__input}/>

@@ -13,6 +13,7 @@
     position: absolute;
     padding: 20px;
     text-align: center;
+    cursor: all-scroll;
     transform: translate(-30%, -70%);
     box-shadow: 3px 3px 10px 3px var(--background-color);
     transition: transform 0.3s ease-in-out;
@@ -62,6 +63,7 @@
     height: 571px;
     box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
+
 
 @media (max-width: 713px) {
     .hero__text {
