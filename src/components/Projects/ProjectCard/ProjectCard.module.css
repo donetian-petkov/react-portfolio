@@ -7,8 +7,8 @@
 }
 
 .projects__card__descr {
-    font-size: 1.5em;
-    width: 60%;
+    font-size: 1.6em;
+    width: 65%;
     margin-bottom: 1%;
     padding: 0.5%;
     color: var(--accent-color);
@@ -16,19 +16,32 @@
 }
 
 .projects__card__img {
-    width: 50%;
+    width: 65%;
     object-fit: cover;
     box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
 
 .projects__card__link h2 {
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: var(--accent-color);
 
 }
 
 .projects__card__links {
+    font-size: 1.2em;
     margin-top: 1em;
+}
+
+.projects__card__links a {
+    margin-left: 0.5em;
+    transition: scale 0.3s ease-in-out;
+}
+
+.projects__card__links *:hover{
+    transform: scale(1.1);
+    background: var(--accent-color);
+    color: var(--background-color);
+    border-radius: 0.2em;
 }
 
 @media (max-width: 1200px) {
