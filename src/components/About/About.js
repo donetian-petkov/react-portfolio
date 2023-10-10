@@ -1,5 +1,5 @@
 import styles from './About.module.css'
-import {withStatusOfLoading} from "../../hocs/withStatusOfLoading";
+import {withStatusOfLoading} from "../../hocs/withStatusOfLoading.js";
 
 const About = (props) => {
 

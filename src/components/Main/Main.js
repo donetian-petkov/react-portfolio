@@ -10,7 +10,7 @@ const Main = () => {
         <main className="main-body">
             {Hero({})}
             {About({})}
-            {withStatusOfLoading(Projects)({})}
+            {Projects({})}
             {withStatusOfLoading(ContactForm)({})}
         </main>
 

@@ -41,6 +41,7 @@ h4 {
   text-underline-offset: 8px;
   text-decoration-thickness: 2px;
   margin-bottom: 5px;
+  text-shadow: 0 0.3em 0.2em rgba(0, 0, 0, 0.52);
 }
 
 a {
@@ -65,12 +66,30 @@ a {
   }
 }
 
+@keyframes scaleEffect {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.0;
+  }
+}
+
 .scaleLoading{
     animation: scaleEffect 5s ease-in-out;
 }
 
 .fadeIn {
-  animation: fadeInEffect 5s ease-in-out;
+  animation: fadeInEffect 3s ease-in-out;
+}
+
+@keyframes scaleEffect {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1.0;
+  }
 }
 
 @media (max-width: 1200px) {

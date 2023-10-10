@@ -1,6 +1,5 @@
 import styles from './Hero.module.css'
-import {useEffect, useState} from "react";
-import {withStatusOfLoading} from "../../hocs/withStatusOfLoading";
+import {withStatusOfLoading} from "../../hocs/withStatusOfLoading.js";
 
 const Hero = (props) => {
 

@@ -1,8 +1,9 @@
-import {ProjectCard} from "./ProjectCard/ProjectCard.js";
+import ProjectCard from "./ProjectCard/ProjectCard.js";
 import styles from './Projects.module.css'
 import {useEffect, useState} from "react";
 import Slider from "../Slider/Slider";
-const Projects = () => {
+import {withStatusOfLoading} from "../../hocs/withStatusOfLoading.js";
+const Projects = (props) => {
 
     const [projects, setProjects] = useState([]);
 
@@ -23,7 +24,7 @@ const Projects = () => {
     });
 
     return (
-        <section id="projects" className={styles.projects}>
+        <section id="projects" className={`${styles.projects} ${props.isLoaded ? 'fadeIn': ''}`}>
 
             <h1 className={styles.projects__title}>Projects</h1>
 
@@ -34,4 +35,4 @@ const Projects = () => {
 
 }
 
-export default Projects;
+export default withStatusOfLoading(Projects);
