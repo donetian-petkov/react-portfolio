@@ -2,7 +2,6 @@ import Hero from "../Hero/Hero.js";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
 import ContactForm from "../ContactForm/ContactForm";
-import {withStatusOfLoading} from "../../hocs/withStatusOfLoading";
 
 const Main = () => {
 
@@ -11,7 +10,7 @@ const Main = () => {
             {Hero({})}
             {About({})}
             {Projects({})}
-            {withStatusOfLoading(ContactForm)({})}
+            {ContactForm({})}
         </main>
 
         )
