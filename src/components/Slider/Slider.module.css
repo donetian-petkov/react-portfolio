@@ -7,13 +7,14 @@
 }
 
 .slider__primary {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
 }
 
 
 .slider__button {
-    margin: 0 auto;
+    margin: 50% auto;
     font-size: 0.8em;
     padding: 1%;
     width: 40%;
