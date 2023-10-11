@@ -8,7 +8,7 @@
 
 .projects__card__descr {
     font-size: 1.6em;
-    width: 65%;
+    width: 33%;
     margin-bottom: 1%;
     padding: 0.5%;
     color: var(--accent-color);
@@ -16,13 +16,13 @@
 }
 
 .projects__card__img {
-    width: 65%;
+    width: 33%;
     object-fit: cover;
     box-shadow: 14px 17px 4px -3px rgba(0,0,0,0.52);
 }
 
 .projects__card__link h2 {
-    font-size: 1.8em;
+    font-size: 1.0em;
     color: var(--accent-color);
 
 }
