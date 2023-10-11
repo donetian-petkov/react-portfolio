@@ -16,14 +16,14 @@ function Slider({components}) {
 
     return (
         <article className={styles.slider}>
-                {components[currentIndex - 1 < 0 ? components.length - 1 : currentIndex - 1]}
+            <div className={styles.slider__secondary}> {components[currentIndex - 1 < 0 ? components.length - 1 : currentIndex - 1]}</div>
                 <div className={styles.slider__primary}>
                     <button aria-label="slider-button-left" className={styles.slider__button} onClick={prevSlide}>
                         <FontAwesomeIcon icon={faArrowLeft} size="2xl"/></button>{components[currentIndex]}
                     <button aria-label="slider-button-right" className={styles.slider__button} onClick={nextSlide}>
                         <FontAwesomeIcon icon={faArrowRight} size="2xl"/></button>
                 </div>
-                {components[currentIndex + 1 === components.length ? 0 : currentIndex + 1]}
+            <div className={styles.slider__secondary}>{components[currentIndex + 1 === components.length ? 0 : currentIndex + 1]} </div>
         </article>
     );
 }
