@@ -17,7 +17,7 @@
     margin: 50% auto;
     font-size: 0.8em;
     padding: 1%;
-    width: 40%;
+    width: 30%;
     max-width: 50%;
     height: 5%;
     cursor:pointer;
@@ -41,7 +41,8 @@
 
 @media (max-width: 1200px) {
     .slider__button {
-        height: 3%;
+        height: 4vh;
+        width: 4vh;
     }
 
     .slider {
@@ -63,6 +64,12 @@
     @media screen and (orientation: landscape) {
         .slider__button {
             height: 6%;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .slider {
+            max-width: 350px;
         }
     }
 }
