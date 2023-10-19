@@ -9,4 +9,4 @@ This is my personal portfolio website built on React, which contains a brief int
 
 ## Live Preview: 
 
-[https://portfolio.donetianpetkov.com/](https://portfolio-react.donetianpetkov.com/)https://portfolio-react.donetianpetkov.com/
+[https://portfolio.donetianpetkov.com/](https://portfolio-react.donetianpetkov.com/)
